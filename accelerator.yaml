@@ -4,6 +4,8 @@ accelerator:
   iconUrl: https://raw.githubusercontent.com/TanzuDK/fastapi-accelerator/main/images/fastapi.svg
   tags:
     - python
+    - fastapi
+    - api
 
   options:
     - name: deploymentType
