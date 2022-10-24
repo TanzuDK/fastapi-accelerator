@@ -1,3 +1,8 @@
-import streamlit as st
+from fastapi import FastAPI
 
-st.write("Hello World")
+app = FastAPI()
+
+
+@app.get("/")
+async def root():
+    return {"message": "Hello World from FastAPI Accelerator"}
