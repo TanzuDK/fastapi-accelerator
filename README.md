@@ -1,4 +1,4 @@
-# Python Accelerator
+# FastApi Accelerator
 
 - [new-accelerator.yaml](new-accelerator.yaml)  
   Rename this file to `accelerator.yaml` and include it inside your new accelerator repo.
