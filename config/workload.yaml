@@ -15,3 +15,12 @@ spec:
       url: #@ data.values.giturl
       ref:
         branch: #@ data.values.gitbranch
+  params:
+    - name: api_descriptor
+      value:
+        type: openapi
+        location:
+          path: "/openapi.json"
+        system: #@ data.values.system
+        owner: #@ data.values.owner
+        description: "A set of API endpoints to manage the resources within fastapi test."

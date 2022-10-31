@@ -54,6 +54,11 @@ accelerator:
       label: System Name
       description: System name, that this app is a part of
       defaultValue: demo
+    - name: apidescription
+      inputType: text
+      label: Api Description
+      description: The description of the api you are building
+      defaultValue: A set of API endpoints to manage the resources within fastapi test.
 
 engine:
   merge:
