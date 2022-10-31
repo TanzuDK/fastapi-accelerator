@@ -7,9 +7,26 @@ metadata:
   tags:
     - python
     - fastapi
+    - api
+  links:
+    - url: https://fastapi.tiangolo.com
+      title: Fastapi Documentation
+      icon: dashboard
   annotations:
     "backstage.io/kubernetes-label-selector": "app.kubernetes.io/part-of=fastapi-accelerator"
 spec:
   type: service
   lifecycle: experimental
-  owner: default-team
+  owner: #@ data.values.owner
+  system: #@ data.values.system
+---
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: demo
+  description: Demo Application
+  annotations:
+    "backstage.io/techdocs-ref": dir:.
+spec:
+  owner: #@ data.values.owner
+  domain: cloud-apps

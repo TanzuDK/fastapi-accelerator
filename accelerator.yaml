@@ -40,6 +40,20 @@ accelerator:
       label: Git Repository branch
       description: The target git repositorys branch, where the code will be stored
       defaultValue: main
+    - name: owner
+      inputType: select
+      choices:
+        - value: team-a
+          text: Team A
+        - value: team-b
+          text: Team B
+      defaultValue: team-a
+      required: true
+    - name: system
+      inputType: text
+      label: System Name
+      description: System name, that this app is a part of
+      defaultValue: demo
 
 engine:
   merge:
