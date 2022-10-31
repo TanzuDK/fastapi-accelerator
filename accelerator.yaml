@@ -69,5 +69,3 @@ engine:
         - "**/*.sh"
         - "Procfile"
         - ".gitignore"
-    - exclude:
-        - "k8s-resource.yaml"
